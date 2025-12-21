@@ -1,0 +1,98 @@
+.carousel {
+  display: flex;
+  perspective: 1000px; /* 👈 enables 3D effect */
+  justify-content: center;
+  align-items: center;
+}
+
+.panel {
+  height: 420px;
+  background: #000;
+}
+
+/* Middle (front-facing) panel */
+.panel.center {
+  transform: translateZ(0px);
+  width: 600px;
+  height: 420px;
+  border-left: 0.5px solid #ffffffb2;
+  border-right: 0.5px solid #ffffffb2;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+  height: 100%;
+  /* ADDED: smooth, continuous animation */
+  /* animation: slide 20s linear infinite; */
+  /* prevent shrinking when translated */
+  will-change: transform;
+}
+
+.slider img {
+  width: 400px;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.slider1 {
+  animation: slide1 30s linear infinite;
+}
+
+.slider2 {
+  animation: slide2 15s linear infinite;
+}
+
+.slider3 {
+  animation: slide3 30s linear infinite;
+}
+
+/* total scroll distance = (image width + gap) * numberOfOriginalImages
+       we duplicate images in HTML to make the loop seamless, so translate by that amount */
+@keyframes slide1 {
+  0% {
+    transform: translateX(700px);
+  }
+  100% {
+    transform: translateX(-1320px);
+  } /* (400 + 40) * 3 = 1320 */
+}
+
+@keyframes slide2 {
+  0% {
+    transform: translateX(700px);
+  }
+  100% {
+    transform: translateX(-1320px);
+  } /* (400 + 40) * 3 = 1320 */
+}
+
+@keyframes slide3 {
+  0% {
+    transform: translateX(700px);
+  }
+  100% {
+    transform: translateX(-1320px);
+  } /* (400 + 40) * 3 = 1320 */
+}
+
+.panel.left {
+  width: 420px;
+  transform: rotateY(80deg); /* pull towards center */
+  transform-origin: right center; /* pivot from right edge */
+  opacity: 0.95;
+  overflow: hidden;
+}
+
+/* Right panel */
+.panel.right {
+  width: 420px;
+  transform: rotateY(-80deg); /* pull towards center */
+  transform-origin: left center; /* pivot from left edge */
+  opacity: 0.95;
+  overflow: hidden;
+}
