@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
+import { IoIosArrowRoundForward } from 'react-icons/io';
 
 const Header = () => {
   const pathname = usePathname();
@@ -21,7 +22,7 @@ const Header = () => {
 
       <div className='flex items-center justify-between flex-1'>
         <div className='flex-[0.2]'>
-          <Link href="/" className='text-black font-bold text-2xl'>YALTLAB</Link>
+          <Link href="/" className='text-black text-3xl font-homevideo'>YALTLAB</Link>
         </div>
 
         <div className='flex-[0.4] bg-[#121212] text-[#D9D9D9]/90 px-8 py-3 space-x-3 rounded-[11px] font-light text-base flex items-center justify-evenly'>
@@ -33,7 +34,13 @@ const Header = () => {
         </div>
 
         <div className='flex-[0.2] flex items-center justify-end'>
-          <button className='bg-[#A4FFBC] text-black font-extrabold px-6 py-3 rounded-[11px] text-sm shadow-2xl'>BOOK A CALL</button>
+          <button className='bg-[#A4FFBC] text-black  px-6 py-1 rounded-[11px] text-lg shadow-2xl font-bebas flex items-center space-x-4'>
+            <p>BOOK A CALL</p>
+
+            <div className="w-[16px] h-[16px] rounded-sm bg-black flex items-center justify-center">
+              <IoIosArrowRoundForward className="text-white -rotate-45" />
+            </div>
+          </button>
         </div>
       </div>
     </nav>
