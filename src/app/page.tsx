@@ -6,6 +6,11 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 import LaunchFasterSection from "./sections/LaunchFasterSection";
 import DesignSection from "./sections/DesignSection";
 import OurWorksSection from "./sections/OurWorksSection";
+import PricingSection from "./sections/PricingSection";
+import TestimonialSection from "./sections/TestimonialSection";
+import CuratedWorksSection from "./sections/CuratedWorksSection";
+import SocialsSection from "./sections/SocialsSection";
+import AboutSection from "./sections/AboutSection";
 
 const coloredBoxes = [
   // { color: "#9C1DE0", row: 19, col: 1 },
@@ -23,97 +28,97 @@ const coloredBoxes = [
   // { color: "#810709", row: 19, col: 3 },
   // { color: "#3DBA9D", row: 15, col: 2 },
   // { color: "#E38316", row: 14, col: 1 },
-  { color: "#E38316", row: 14, col: 1 },
-  { color: "#E38316", row: 15, col: 2 },
-  { color: "#E38316", row: 16, col: 3 },
-  { color: "#E38316", row: 17, col: 3 },
-  { color: "#E38316", row: 18, col: 3 },
-  { color: "#E38316", row: 19, col: 3 },
-  { color: "#E38316", row: 15, col: 4 },
-  { color: "#E38316", row: 14, col: 5 },
+  { color: "#181818", row: 14, col: 1 },
+  { color: "#181818", row: 15, col: 2 },
+  { color: "#181818", row: 16, col: 3 },
+  { color: "#181818", row: 17, col: 3 },
+  { color: "#181818", row: 18, col: 3 },
+  { color: "#181818", row: 19, col: 3 },
+  { color: "#181818", row: 15, col: 4 },
+  { color: "#181818", row: 14, col: 5 },
 
 
-  { color: "#9C1DE0", row: 19, col: 5 },
-  { color: "#9C1DE0", row: 18, col: 5 },
-  { color: "#9C1DE0", row: 17, col: 5 },
-  { color: "#9C1DE0", row: 16, col: 6 },
-  { color: "#9C1DE0", row: 15, col: 7 },
-  { color: "#9C1DE0", row: 14, col: 7 },
-  { color: "#9C1DE0", row: 16, col: 8 },
-  { color: "#9C1DE0", row: 17, col: 9 },
-  { color: "#9C1DE0", row: 18, col: 9 },
-  { color: "#9C1DE0", row: 19, col: 9 },
-  { color: "#9C1DE0", row: 18, col: 8 },
-  { color: "#9C1DE0", row: 18, col: 7 },
-  { color: "#9C1DE0", row: 18, col: 6 },
-
-
-
-  { color: "#127989", row: 19, col: 11 },
-  { color: "#127989", row: 18, col: 11 },
-  { color: "#127989", row: 17, col: 11 },
-  { color: "#127989", row: 16, col: 11 },
-  { color: "#127989", row: 15, col: 11 },
-  { color: "#127989", row: 14, col: 11 },
-  { color: "#127989", row: 19, col: 12 },
-  { color: "#127989", row: 19, col: 13 },
-  { color: "#127989", row: 19, col: 14 },
-
-
-  { color: "#3DBA9D", row: 19, col: 16 },
-  { color: "#3DBA9D", row: 18, col: 16 },
-  { color: "#3DBA9D", row: 17, col: 16 },
-  { color: "#3DBA9D", row: 16, col: 16 },
-  { color: "#3DBA9D", row: 15, col: 16 },
-  { color: "#3DBA9D", row: 14, col: 16 },
-  { color: "#3DBA9D", row: 14, col: 17 },
-  { color: "#3DBA9D", row: 14, col: 18 },
-  { color: "#3DBA9D", row: 14, col: 15 },
-  { color: "#3DBA9D", row: 14, col: 14 },
-
-
-  { color: "#810709", row: 19, col: 20 },
-  { color: "#810709", row: 18, col: 20 },
-  { color: "#810709", row: 17, col: 20 },
-  { color: "#810709", row: 16, col: 20 },
-  { color: "#810709", row: 15, col: 20 },
-  { color: "#810709", row: 14, col: 20 },
-  { color: "#810709", row: 19, col: 21 },
-  { color: "#810709", row: 19, col: 22 },
-  { color: "#810709", row: 19, col: 23 },
-
-
-  { color: "#9C1DE0", row: 19, col: 25 },
-  { color: "#9C1DE0", row: 18, col: 25 },
-  { color: "#9C1DE0", row: 17, col: 25 },
-  { color: "#9C1DE0", row: 16, col: 26 },
-  { color: "#9C1DE0", row: 15, col: 27 },
-  { color: "#9C1DE0", row: 14, col: 27 },
-  { color: "#9C1DE0", row: 16, col: 28 },
-  { color: "#9C1DE0", row: 17, col: 29 },
-  { color: "#9C1DE0", row: 18, col: 29 },
-  { color: "#9C1DE0", row: 19, col: 29 },
-  { color: "#9C1DE0", row: 18, col: 28 },
-  { color: "#9C1DE0", row: 18, col: 27 },
-  { color: "#9C1DE0", row: 18, col: 26 },
+  { color: "#181818", row: 19, col: 5 },
+  { color: "#181818", row: 18, col: 5 },
+  { color: "#181818", row: 17, col: 5 },
+  { color: "#181818", row: 16, col: 6 },
+  { color: "#181818", row: 15, col: 7 },
+  { color: "#181818", row: 14, col: 7 },
+  { color: "#181818", row: 16, col: 8 },
+  { color: "#181818", row: 17, col: 9 },
+  { color: "#181818", row: 18, col: 9 },
+  { color: "#181818", row: 19, col: 9 },
+  { color: "#181818", row: 18, col: 8 },
+  { color: "#181818", row: 18, col: 7 },
+  { color: "#181818", row: 18, col: 6 },
 
 
 
+  { color: "#181818", row: 19, col: 11 },
+  { color: "#181818", row: 18, col: 11 },
+  { color: "#181818", row: 17, col: 11 },
+  { color: "#181818", row: 16, col: 11 },
+  { color: "#181818", row: 15, col: 11 },
+  { color: "#181818", row: 14, col: 11 },
+  { color: "#181818", row: 19, col: 12 },
+  { color: "#181818", row: 19, col: 13 },
+  { color: "#181818", row: 19, col: 14 },
 
-  { color: "#B3ED7C", row: 19, col: 31 },
-  { color: "#B3ED7C", row: 18, col: 31 },
-  { color: "#B3ED7C", row: 17, col: 31 },
-  { color: "#B3ED7C", row: 16, col: 31 },
-  { color: "#B3ED7C", row: 15, col: 31 },
-  { color: "#B3ED7C", row: 14, col: 31 },
-  { color: "#B3ED7C", row: 14, col: 32 },
-  { color: "#B3ED7C", row: 14, col: 33 },
-  { color: "#B3ED7C", row: 15, col: 34 },
-  { color: "#B3ED7C", row: 16, col: 34 },
-  { color: "#B3ED7C", row: 17, col: 33 },
-  { color: "#B3ED7C", row: 17, col: 32 },
-  { color: "#B3ED7C", row: 18, col: 34 },
-  { color: "#B3ED7C", row: 19, col: 34 },
+
+  { color: "#181818", row: 19, col: 16 },
+  { color: "#181818", row: 18, col: 16 },
+  { color: "#181818", row: 17, col: 16 },
+  { color: "#181818", row: 16, col: 16 },
+  { color: "#181818", row: 15, col: 16 },
+  { color: "#181818", row: 14, col: 16 },
+  { color: "#181818", row: 14, col: 17 },
+  { color: "#181818", row: 14, col: 18 },
+  { color: "#181818", row: 14, col: 15 },
+  { color: "#181818", row: 14, col: 14 },
+
+
+  { color: "#181818", row: 19, col: 20 },
+  { color: "#181818", row: 18, col: 20 },
+  { color: "#181818", row: 17, col: 20 },
+  { color: "#181818", row: 16, col: 20 },
+  { color: "#181818", row: 15, col: 20 },
+  { color: "#181818", row: 14, col: 20 },
+  { color: "#181818", row: 19, col: 21 },
+  { color: "#181818", row: 19, col: 22 },
+  { color: "#181818", row: 19, col: 23 },
+
+
+  { color: "#181818", row: 19, col: 25 },
+  { color: "#181818", row: 18, col: 25 },
+  { color: "#181818", row: 17, col: 25 },
+  { color: "#181818", row: 16, col: 26 },
+  { color: "#181818", row: 15, col: 27 },
+  { color: "#181818", row: 14, col: 27 },
+  { color: "#181818", row: 16, col: 28 },
+  { color: "#181818", row: 17, col: 29 },
+  { color: "#181818", row: 18, col: 29 },
+  { color: "#181818", row: 19, col: 29 },
+  { color: "#181818", row: 18, col: 28 },
+  { color: "#181818", row: 18, col: 27 },
+  { color: "#181818", row: 18, col: 26 },
+
+
+
+
+  { color: "#181818", row: 19, col: 31 },
+  { color: "#181818", row: 18, col: 31 },
+  { color: "#181818", row: 17, col: 31 },
+  { color: "#181818", row: 16, col: 31 },
+  { color: "#181818", row: 15, col: 31 },
+  { color: "#181818", row: 14, col: 31 },
+  { color: "#181818", row: 14, col: 32 },
+  { color: "#181818", row: 14, col: 33 },
+  { color: "#181818", row: 15, col: 34 },
+  { color: "#181818", row: 16, col: 34 },
+  { color: "#181818", row: 17, col: 33 },
+  { color: "#181818", row: 17, col: 32 },
+  { color: "#181818", row: 18, col: 34 },
+  { color: "#181818", row: 19, col: 34 },
 ];
 
 export default function Home() {
@@ -154,9 +159,9 @@ export default function Home() {
         </div>
 
         <div className="w-full h-full flex flex-col items-center -mt-16 justify-center z-10 gap-y-12">
-          <div className="w-full h-fit flex items-center justify-center flex-col gap-y-3 text-[#A4FFBC] font-bebas">
+          <div className="w-full h-fit flex items-center justify-center flex-col gap-y-3 text-white font-bebas">
             <h1 className="text-7xl ">Your Vision, Our Code</h1>
-            <h2 className="text-7xl">
+            <h2 className="text-7xl text-[#A4FFBC]">
               {" "}
               Let’s Build Something Extraordinary.
             </h2>
@@ -170,7 +175,7 @@ export default function Home() {
                 <IoIosArrowRoundForward className="text-white -rotate-45" />
               </div></button>
 
-            <button className='bg-white text-black px-8 py-2 rounded-[37px] text-xl flex items-center space-x-4 '>
+            <button className='bg-[#A4FFBC] text-black px-8 py-2 rounded-[37px] text-xl flex items-center space-x-4 '>
               <p className="font-bebas">BOOK A CALL</p>
 
               <div className="w-[18px] h-[18px] rounded-sm bg-black flex items-center justify-center">
@@ -180,12 +185,12 @@ export default function Home() {
           </div>
         </div>
 
-        <div
-          className="w-[650px] h-[180px] bg-white rounded-lg
+        {/* <div
+          className="w-[650px] h-[180px] bg-transparent rounded-lg
         absolute -bottom-2 left-1/2 transform -translate-x-1/2  shadow-[0_-8px_150px_50px_rgba(164,255,188,0.27)]"
         >
           <HeroCardScreen />
-        </div>
+        </div> */}
       </section>
 
       {/* clients section */}
@@ -203,6 +208,21 @@ export default function Home() {
 
       {/* Our works section */}
       <OurWorksSection />
+
+      {/* pricing section */}
+      <PricingSection />
+
+      {/* testimonial section */}
+      <TestimonialSection />
+
+      {/* curated works section */}
+      <CuratedWorksSection />
+
+      {/* socials section */}
+      <SocialsSection />
+
+      {/* about section */}
+      <AboutSection />
     </div>
   );
 }

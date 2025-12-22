@@ -78,7 +78,7 @@ const ClientBox = ({ name }: { name: string }) => {
 
 const ClientSection = () => {
     return (
-        <section className="w-full bg-white h-[460px] border-t-[0.5px] border-t-black/20 flex flex-1">
+        <section className="w-full bg-white h-[460px] border-t-[0.5px] border-t-black/20 flex flex-1 shadow-[0_-100px_200px_1px_rgba(164,255,188,0.27)]">
 
             <div className="w-[80px] border-r-[0.5px] border-r-black flex flex-col">
                 <div className="w-full h-[60px] border-b-[0.5px] border-b-black">

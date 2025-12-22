@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import { Bebas_Neue, Permanent_Marker } from 'next/font/google'
 import localFont from 'next/font/local'
+import Footer from "@/components/Footer";
 
 
 const bebasNeue = Bebas_Neue({
@@ -51,6 +52,7 @@ export default function RootLayout({
       <body className={`antialiased ${bebasNeue.variable} ${permanentMarker.variable} ${homeVideo.variable}`}>
         <Header />
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );
