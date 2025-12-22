@@ -1,3 +1,4 @@
+import Folder from "@/components/Folder";
 
 
 
@@ -35,12 +36,27 @@ const CuratedWorksSection = () => {
                     </div>
 
                     <div className="w-full h-full grid grid-cols-3 grid-rows-2 [&>*]:w-full [&>*]:h-full">
-                        <div className="border-b-[0.5px] border-b-black border-r-[0.5px] border-r-black"></div>
-                        <div className="border-b-[0.5px] border-b-black border-r-[0.5px] border-r-black"></div>
-                        <div className="border-b-[0.5px] border-b-black"></div>
-                        <div className="border-r-[0.5px] border-r-black"></div>
-                        <div className="border-r-[0.5px] border-r-black "></div>
-                        <div className=""></div>
+                        <div className="border-b-[0.5px] border-b-black border-r-[0.5px] border-r-black flex items-center justify-center">
+                            <Folder title="Web Development" />
+                        </div>
+                        <div className="border-b-[0.5px] border-b-black border-r-[0.5px] border-r-black flex items-center justify-center">
+                            <Folder title="App Development" />
+                        </div>
+                        <div className="border-b-[0.5px] border-b-black flex items-center justify-center">
+                            <Folder title="Desktop App Development" />
+                        </div>
+                        <div className="border-r-[0.5px] border-r-black flex items-center justify-center">
+                            <Folder title="UI/UX Design" />
+
+                        </div>
+                        <div className="border-r-[0.5px] border-r-black flex items-center justify-center ">
+                            <Folder title="AI/ML" />
+
+                        </div>
+                        <div className="flex items-center justify-center">
+                            <Folder title="Blockchain" />
+
+                        </div>
 
                     </div>
                 </div>
