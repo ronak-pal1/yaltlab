@@ -1,9 +1,96 @@
 import BookText from "@/components/BookText"
 
 
-const TestimonialCard = () => {
+
+const testimonals = [
+    {
+        image: "",
+        name: "",
+        position: "",
+        review: ""
+    },
+    {
+        image: "",
+        name: "",
+        position: "",
+        review: ""
+    },
+    {
+        image: "",
+        name: "",
+        position: "",
+        review: ""
+    },
+    {
+        image: "",
+        name: "",
+        position: "",
+        review: ""
+    },
+]
+
+const TestimonialCard = ({ index }: { index: number }) => {
     return (
-        <div className="h-full w-[400px] bg-[#181818] shrink-0">
+        <div className={`h-full w-[400px] bg-[#181818] shrink-0 border-x-[0.5px] border-x-white/40`}>
+
+            <div className="flex flex-row flex-1  w-full h-full">
+                <div className="w-[20px] border-r-[0.5px] border-r-white/40 flex flex-col">
+                    <div className="w-full h-[20px] border-b-[0.5px] border-b-white/40">
+
+                    </div>
+
+
+                    <div className="flex flex-1 flex-col">
+
+
+                    </div>
+
+                    <div className="w-full h-[20px] border-t-[0.5px] border-t-white/40">
+
+                    </div>
+                </div>
+
+
+                <div className="flex-1 flex flex-col overflow-hidden">
+
+                    <div className="w-full h-[20px] border-b-[0.5px] border-b-white/40">
+
+                    </div>
+
+
+                    <div className="flex flex-1 flex-col">
+                        {/* <div className="w-full h-[100px] flex flex-row border-b-[0.5px] border-b-white/40 px-7 items-center ">
+                    </div>
+
+                    <div className="w-full flex flex-1 h-full p-10 justify-evenly flex-wrap gap-7">
+                     
+
+                    </div> */}
+                    </div>
+
+                    <div className="w-full h-[20px] border-t-[0.5px] border-t-white/40">
+
+                    </div>
+
+                </div>
+
+
+                <div className="w-[20px] border-l-[0.5px] border-l-white/40 flex flex-col">
+                    <div className="w-full h-[20px] border-b-[0.5px] border-b-white/40">
+
+                    </div>
+
+
+                    <div className="flex flex-1 flex-col">
+
+                    </div>
+
+                    <div className="w-full h-[20px] border-t-[0.5px] border-t-white/40">
+
+                    </div>
+                </div>
+            </div>
+
 
         </div>
     )
@@ -49,13 +136,12 @@ const TestimonialSection = () => {
 
                     <div className="w-full flex flex-1 h-full overflow-x-scroll scrollbar-hide">
 
-                        <div className="flex flex-1 w-full h-full gap-x-6">
-                            <TestimonialCard />
-
-                            <TestimonialCard />
-
-                            <TestimonialCard />
-                            <TestimonialCard />
+                        <div className="flex flex-1 w-full h-full gap-x-6 ml-7">
+                            {
+                                testimonals.map((testimonial, index) => (
+                                    <TestimonialCard key={index} index={index} />
+                                ))
+                            }
                         </div>
 
 
