@@ -20,9 +20,9 @@ const Footer = () => {
         </div>
       </div>
 
-      <footer className='w-full h-[900px] bg-[#A4FFBC]'>
+      <footer className='w-full h-fit pt-36 pb-16 px-10 bg-[#A4FFBC]'>
 
-        <div className='w-full h-full  flex flex-row flex-1'>
+        <div className='w-full h-full  flex flex-row flex-1 justify-between'>
 
           <div className='flex-[0.4] w-full h-full flex flex-col items-center justify-center'>
 
@@ -51,17 +51,63 @@ const Footer = () => {
 
           </div>
 
-          <div className='flex-[0.6] w-full h-full'>
+          <div className='flex-[0.5] w-full h-full flex flex-col items-center justify-center'>
+
+
+            <div className="w-[50%] h-[60%] grid grid-cols-2 grid-rows-2 gap-20">
+
+              <div className="text-black space-y-4">
+                <h2 className="font-light">Services</h2>
+
+                <div className="text-lg font-bold space-y-2">
+                  <p>Web Development</p>
+                  <p>IOS Development</p>
+                  <p>Android Development</p>
+                  <p>UI/UX Design</p>
+                  <p>Desktop App</p>
+                </div>
+              </div>
+              <div className="text-black space-y-4">
+                <h2 className="font-light">Socials</h2>
+
+                <div className="text-lg font-bold space-y-2">
+                  <p>Instagram</p>
+                  <p>Facebook</p>
+                  <p>Twitter</p>
+                  <p>Linkedin</p>
+                  <p>Youtube</p>
+                </div>
+              </div>
+              <div className="text-black space-y-4">
+                <h2 className="font-light">Products</h2>
+
+                <div className="text-lg font-bold space-y-2">
+                  <p>Create Tall CLI</p>
+                  <p>Tall UI</p>
+                  <p>Portfolio Maker</p>
+                </div>
+              </div>
+              <div className="text-black space-y-4">
+                <h2 className="font-light">Others</h2>
+
+                <div className="text-lg font-bold space-y-2">
+                  <p>About</p>
+                  <p>Portfolio</p>
+                  <p>Blog</p>
+                  <p>Terms & Conditions</p>
+                  <p>Privacy Policy</p>
+                </div>
+              </div>
+
+            </div>
 
           </div>
-
         </div>
 
-        <div>
-
+        <div className="flex flex-col space-y-4 w-full items-center justify-center mt-14">
+          <p className='text-black text-3xl font-homevideo'>YALTLAB</p>
+          <p className="text-black/70 text-xs">Copyright © 2025 YALTLAB. All rights reserved.</p>
         </div>
-
-
       </footer>
     </div>
   );
