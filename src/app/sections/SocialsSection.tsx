@@ -35,10 +35,25 @@ const SocialsSection = () => {
                     </div>
 
                     <div className="w-full h-full grid grid-cols-2 grid-rows-2 [&>*]:w-full [&>*]:h-full">
-                        <div className="border-b-[0.5px] border-b-white/40 border-r-[0.5px] border-r-white/40"></div>
-                        <div className="border-b-[0.5px] border-b-white/40"></div>
-                        <div className="border-r-[0.5px] border-r-white/40"></div>
-                        <div className=""></div>
+                        <div className="border-b-[0.5px] border-b-white/40 border-r-[0.5px] border-r-white/40 p-10">
+                            <div className="bg-[#613DFF] w-full h-full">
+
+                            </div>
+                        </div>
+                        <div className="border-b-[0.5px] border-b-white/40 p-10">
+                            <div className="bg-[#A4FFBC] w-full h-full">
+
+                            </div>
+                        </div>
+                        <div className="border-r-[0.5px] border-r-white/40 p-10">
+                            <div className="bg-[#E3FF84] w-full h-full">
+
+                            </div></div>
+                        <div className="p-10">
+                            <div className="bg-[#F946AC] w-full h-full">
+
+                            </div>
+                        </div>
 
                     </div>
                 </div>
