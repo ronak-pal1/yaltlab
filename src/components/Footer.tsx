@@ -18,6 +18,11 @@ const Footer = () => {
         </div>
         <div className='w-[200px] bg-[#A4FFBC] h-[80px] absolute bottom-0 left-[40px]'>
         </div>
+
+        <div className='w-[40px] bg-[#A4FFBC] h-[80px] absolute bottom-[40px] left-[240px]'>
+        </div>
+
+        <div className='w-[40px] bg-[#A4FFBC] h-[80px] absolute bottom-0 left-[280px]'></div>
       </div>
 
       <footer className='w-full h-fit pt-36 pb-16 px-10 bg-[#A4FFBC]'>
