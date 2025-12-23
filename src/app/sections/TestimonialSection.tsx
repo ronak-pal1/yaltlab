@@ -58,14 +58,24 @@ const TestimonialCard = ({ index }: { index: number }) => {
                     </div>
 
 
-                    <div className="flex flex-1 flex-col">
-                        {/* <div className="w-full h-[100px] flex flex-row border-b-[0.5px] border-b-white/40 px-7 items-center ">
-                    </div>
+                    <div className="flex flex-1 flex-col p-5 justify-between">
+                        <div className="flex flex-row space-x-7">
+                            <div>
+                                <img src={"https://avatars.githubusercontent.com/u/98758085?v=4"} alt="client image" className="w-[80px] h-[80px] object-cover" />
+                            </div>
 
-                    <div className="w-full flex flex-1 h-full p-10 justify-evenly flex-wrap gap-7">
-                     
 
-                    </div> */}
+                            <div className="flex flex-col">
+                                <p className="text-[#BCBCBC] font-bold text-lg">Ronak Paul</p>
+                                <p className="text-[#BCBCBC] font-light text-sm">CEO, Yaltlab</p>
+                            </div>
+
+                        </div>
+
+
+                        <div>
+                            <p className="text-base text-[#BCBCBC]/70">Rapid MVP development with robust architecture and clean, maintainable code. Rapid MVP development with robust architecture and clean, maintainable code. Rapid MVP development with robust architecture and clean, maintainable code. Rapid MVP development with robust architecture and clean ❤️🔥</p>
+                        </div>
                     </div>
 
                     <div className="w-full h-[20px] border-t-[0.5px] border-t-white/40">

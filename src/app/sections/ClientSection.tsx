@@ -16,11 +16,11 @@ const clients = [
         logo: "https://via.placeholder.com/150",
     },
     {
-        name: "Jonaki Vibes",
+        name: "Zonaki Vibes",
         logo: "https://via.placeholder.com/150",
     },
     {
-        name: "Jonaki Vibes",
+        name: "Zonaki Vibes",
         logo: "https://via.placeholder.com/150",
     },
 ]
