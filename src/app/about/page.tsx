@@ -1,61 +1,58 @@
-export default function About() {
+import type { Metadata } from "next";
+import { about, process, stats } from "@/lib/content";
+import PageHero from "@/components/ui/PageHero";
+import Container from "@/components/ui/Container";
+import GlassCard from "@/components/ui/GlassCard";
+import Reveal from "@/components/effects/Reveal";
+import CloseCTASection from "@/components/sections/CloseCTASection";
+
+export const metadata: Metadata = {
+  title: "About",
+  description: "YaltLab is a product studio that ships MVPs in 14 days.",
+};
+
+export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
-      <div className="max-w-4xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-        <div className="text-center">
-          <h1 className="text-4xl font-bold text-gray-900 mb-8">About Our Agency</h1>
-          <p className="text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
-            We are a passionate team dedicated to delivering exceptional digital solutions 
-            that help businesses grow and succeed in today&apos;s competitive market.
-          </p>
-        </div>
+    <>
+      <PageHero eyebrow="About" title={about.headline} copy={about.story} />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
-          <div>
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">Our Mission</h2>
-            <p className="text-gray-600 leading-relaxed">
-              To empower businesses with innovative digital solutions that drive growth, 
-              enhance user experiences, and create lasting value. We believe in the power 
-              of technology to transform ideas into reality.
-            </p>
+      <section className="relative pb-16">
+        <Container>
+          <div className="grid gap-4 md:grid-cols-3">
+            {stats.map((stat) => (
+              <GlassCard key={stat.label} className="px-6 py-8 text-center">
+                <p className="font-display text-3xl font-semibold text-navy">{stat.value}</p>
+                <p className="mt-1 text-sm text-navy/55">{stat.label}</p>
+              </GlassCard>
+            ))}
           </div>
-          <div>
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">Our Vision</h2>
-            <p className="text-gray-600 leading-relaxed">
-              To be the trusted partner for businesses seeking to establish a strong 
-              digital presence and achieve sustainable growth through cutting-edge 
-              technology and creative excellence.
-            </p>
-          </div>
-        </div>
 
-        <div className="bg-white rounded-lg shadow-lg p-8">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-6 text-center">Why Choose Us?</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <span className="text-blue-600 text-2xl font-bold">1</span>
-              </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Expert Team</h3>
-              <p className="text-gray-600">Experienced professionals with deep expertise in modern technologies.</p>
-            </div>
-            <div className="text-center">
-              <div className="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <span className="text-green-600 text-2xl font-bold">2</span>
-              </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Quality Focused</h3>
-              <p className="text-gray-600">Committed to delivering high-quality solutions that exceed expectations.</p>
-            </div>
-            <div className="text-center">
-              <div className="bg-purple-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <span className="text-purple-600 text-2xl font-bold">3</span>
-              </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Client Success</h3>
-              <p className="text-gray-600">Your success is our priority. We work closely with you to achieve your goals.</p>
-            </div>
+          <Reveal>
+            <GlassCard className="mt-8 p-5 sm:p-8 md:p-12">
+              <p className="text-xs uppercase tracking-[0.24em] text-blue sm:text-sm">How we work</p>
+              <p className="font-display mt-4 max-w-3xl text-xl leading-snug text-navy sm:text-2xl md:text-3xl">
+                {about.method}
+              </p>
+            </GlassCard>
+          </Reveal>
+
+          <div className="mt-8 grid gap-5 md:grid-cols-3">
+            {process.map((step, i) => (
+              <Reveal key={step.title} delay={i * 0.08}>
+                <GlassCard className="h-full p-5 sm:p-7">
+                  <p className="text-sm text-blue">Days {step.days}</p>
+                  <h2 className="font-display mt-2 text-2xl font-semibold text-navy">
+                    {step.title}
+                  </h2>
+                  <p className="mt-3 text-sm text-navy/60">{step.body}</p>
+                </GlassCard>
+              </Reveal>
+            ))}
           </div>
-        </div>
-      </div>
-    </div>
+        </Container>
+      </section>
+
+      <CloseCTASection />
+    </>
   );
 }

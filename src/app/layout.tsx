@@ -1,45 +1,34 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
+import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
-import { Bebas_Neue, Permanent_Marker } from 'next/font/google'
-import localFont from 'next/font/local'
 import Footer from "@/components/Footer";
+import SmoothScroll from "@/components/effects/SmoothScroll";
+import { site } from "@/lib/content";
 
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
 
-const bebasNeue = Bebas_Neue({
-  weight: '400',
-  subsets: ['latin'],
-  variable: '--font-bebas',
-})
+const jakarta = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  variable: "--font-jakarta",
+  weight: ["400", "500", "600", "700", "800"],
+});
 
-const permanentMarker = Permanent_Marker({
-  weight: '400',
-  subsets: ['latin'],
-  variable: '--font-permanent',
-})
-
-const homeVideo = localFont({
-  src: [
-    {
-      path: '../../public/fonts/HomeVideo-Regular.woff2',
-      weight: '400',
-      style: 'normal',
-    },
-    {
-      path: '../../public/fonts/HomeVideo-Bold.woff2',
-      weight: '700',
-      style: 'normal',
-    },
-  ],
-  variable: '--font-homevideo',
-  display: 'swap',
-})
-
-
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+};
 
 export const metadata: Metadata = {
-  title: "YaltLab: Build MVP in 14 days",
-  description: "Professional agency services and portfolio showcase",
+  title: {
+    default: `${site.name}: ${site.tagline}`,
+    template: `%s · ${site.name}`,
+  },
+  description: site.description,
 };
 
 export default function RootLayout({
@@ -49,10 +38,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`antialiased ${bebasNeue.variable} ${permanentMarker.variable} ${homeVideo.variable}`}>
-        <Header />
-        <main>{children}</main>
-        <Footer />
+      <body className={`antialiased ${inter.variable} ${jakarta.variable}`}>
+        <SmoothScroll>
+          <Header />
+          <main className="relative z-10">{children}</main>
+          <Footer />
+        </SmoothScroll>
       </body>
     </html>
   );
