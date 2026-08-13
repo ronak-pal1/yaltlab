@@ -10,7 +10,7 @@ export default function PricingTeaserSection() {
       <Container>
         <p className="text-xs uppercase tracking-[0.24em] text-blue sm:text-sm">Pricing</p>
         <SplitHeading
-          text="Start with a site. Or start with the product."
+          text="A site this month. Or the product in two weeks."
           className="font-display mt-3 max-w-2xl text-[1.75rem] font-semibold tracking-tight text-navy text-balance sm:text-4xl md:text-5xl"
         />
 

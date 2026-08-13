@@ -1,9 +1,9 @@
 export const site = {
   name: "YaltLab",
-  tagline: "Build MVP in 14 days",
+  tagline: "Your alternative lab",
   email: "hello@yaltlab.com",
   description:
-    "YaltLab is a product studio that designs, builds, and launches software in 14 days — clean architecture, senior craft, and a product you actually own.",
+    "YaltLab — Your alternative lab. We design, build, and launch software in 14 days so you skip the agency wait and own what ships.",
 };
 
 export const nav = [
@@ -21,23 +21,23 @@ export const clients = [
 ];
 
 export const stats = [
-  { value: "14 days", label: "Typical MVP sprint" },
-  { value: "100%", label: "Code you own" },
-  { value: "6+", label: "Product surfaces" },
+  { value: "14 days", label: "Idea to live MVP" },
+  { value: "100%", label: "Yours to keep" },
+  { value: "6+", label: "Surfaces we ship" },
 ];
 
 export const pillars = [
   {
-    title: "Ship in two weeks",
-    body: "A locked scope, daily builds, and a launch date that does not slip. You see working software by day four — not a deck.",
+    title: "Two weeks, not two quarters",
+    body: "A locked brief, a date that holds, and software you can click by day four. The alternative to a six-month agency calendar.",
   },
   {
-    title: "Senior-built, future-proof",
-    body: "Production architecture from commit one. No throwaway prototypes. The codebase is meant to scale past the first release.",
+    title: "Built to outlive the sprint",
+    body: "Production code from the first commit. No disposable prototype. You leave with a foundation you can keep shipping on.",
   },
   {
-    title: "You keep the keys",
-    body: "Source, design files, domains, and infrastructure in your name. We leave you with a product, not a dependency.",
+    title: "The lab hands you the keys",
+    body: "Repo, design files, domain, and cloud in your name. We are a partner for the sprint — not a landlord after it.",
   },
 ];
 
@@ -47,43 +47,43 @@ export const services = [
     title: "Web Development",
     eyebrow: "Product & marketing",
     summary:
-      "High-performance web apps and sites that look expensive and convert like they should.",
-    body: "From 14-day MVPs to production platforms — Next.js, type-safe APIs, and interfaces that feel native. We design the funnel and the product in the same sprint.",
+      "Web apps and sites that load fast, convert, and do not need a rewrite in six months.",
+    body: "MVPs and production platforms on Next.js — type-safe APIs, a funnel and a product designed in the same two weeks.",
   },
   {
     slug: "ios",
     title: "iOS Development",
     eyebrow: "Native Apple",
-    summary: "Swift apps with the polish of a first-party product.",
-    body: "Native iOS built for App Store review, performance, and the gestures people already know. We handle product, UI, and shipping — not just tickets.",
+    summary: "Native Swift apps that feel like they belong on an iPhone.",
+    body: "Product, UI, and App Store shipping in one sprint. Gestures people already know, performance that survives review.",
   },
   {
     slug: "android",
     title: "Android Development",
     eyebrow: "Native Google",
-    summary: "Kotlin apps that feel at home on every screen size.",
-    body: "Material-fluent Android with clean architecture, offline-aware data, and a release pipeline you can run without us.",
+    summary: "Kotlin apps that behave on every screen, not just a flagship.",
+    body: "Clean architecture, offline-aware data, Material that feels native, and a release pipeline you can run without us.",
   },
   {
     slug: "desktop",
     title: "Desktop Apps",
     eyebrow: "Mac, Windows, Linux",
-    summary: "Cross-platform desktop tools that still feel native.",
-    body: "Electron or Tauri when the work lives on a machine — dashboards, creative tools, internal systems. Fast to ship, serious about performance.",
+    summary: "Desktop tools for Mac, Windows, and Linux that still feel local.",
+    body: "Electron or Tauri when the work lives on a machine — dashboards, internal systems, creative tools. Fast to ship, honest about performance.",
   },
   {
     slug: "design",
     title: "UI/UX Design",
     eyebrow: "Interface & brand",
-    summary: "Liquid, high-contrast interfaces that make the product feel inevitable.",
-    body: "Research, flows, and a visual system you can hand to any engineer. We design for conversion and for the people who will live in the product.",
+    summary: "Flows and a visual system your next engineer can actually use.",
+    body: "Research, screens, and a design language built for conversion — and for the people who will live in the product every day.",
   },
   {
     slug: "ai",
     title: "AI / ML",
     eyebrow: "Applied intelligence",
-    summary: "Practical AI inside the product — not a slide about the future.",
-    body: "Assistants, extraction, ranking, and generation wired into real workflows. We pick the model, the guardrails, and the UX so it actually ships.",
+    summary: "AI wired into the workflow — not a slide about tomorrow.",
+    body: "Assistants, extraction, ranking, generation. We pick the model, the guardrails, and the UX so the feature ships in the sprint.",
   },
 ];
 
@@ -91,71 +91,71 @@ export const process = [
   {
     days: "01–03",
     title: "Discover",
-    body: "We lock the outcome, the users, and the architecture. You leave with a scope, a visual direction, and a sprint plan — not a 40-page PDF.",
+    body: "We lock the outcome, the users, and the stack. You leave with a scope, a visual direction, and a two-week plan — not a forty-page PDF.",
   },
   {
     days: "04–11",
     title: "Build",
-    body: "Daily working software. Design and engineering move in the same thread. You review in the browser, not in Figma comments.",
+    body: "Daily working software. Design and engineering in the same thread. You review in the browser, not in a comment thread.",
   },
   {
     days: "12–14",
     title: "Launch",
-    body: "Polish, production deploy, analytics, and a clean handoff. Domain, repo, and credentials sit with you on day fourteen.",
+    body: "Polish, production deploy, analytics, handoff. Domain, repo, and credentials sit with you on day fourteen.",
   },
 ];
 
 export const works = [
   {
-    slug: "ledger",
-    title: "Ledger Archives",
-    category: "Web platform",
-    result: "Searchable archive for on-chain records, shipped as a public product.",
-    image:
-      "https://cdn.prod.website-files.com/6864f039b26f4afedada6bc5/68b5aa27cbe6b05e7c389afa_blockchain-archives.avif",
+    slug: "ariesfit",
+    title: "Ariesfit",
+    category: "Fitness app + web",
+    result: "AI fitness product spanning app and web — training, tracking, and a site that matches the product.",
+    image: "/works/ariesfit.png",
+    link: "https://ariesfit.in",
   },
   {
-    slug: "relay",
-    title: "Relay Files",
-    category: "SaaS",
-    result: "A file product that stays fast past 100KB — and past a million.",
-    image:
-      "https://cdn.prod.website-files.com/6864f039b26f4afedada6bc5/68b5aa27c727376b84e9912e_any-file-over-100kb.avif",
+    slug: "brightstudios",
+    title: "Bright Studios",
+    category: "Agency website",
+    result: "A software studio site that loads fast and holds up on every screen.",
+    image: "/works/brightstudios.png",
+    link: "https://brightstudios.in",
   },
   {
-    slug: "north",
-    title: "North Studio",
-    category: "Marketing site",
-    result: "A conversion-first site that made the product feel already launched.",
-    image:
-      "https://cdn.prod.website-files.com/6864f039b26f4afedada6bc5/68b5aa1dbeb08c598a6a29ac_website.avif",
+    slug: "gocourier",
+    title: "Go Courier",
+    category: "Food delivery",
+    result: "An ordering site built to be obvious — browse, cart, checkout without friction.",
+    image: "/works/gocourier.png",
+    link: "https://gocourier-drab.vercel.app/",
   },
   {
-    slug: "aura",
-    title: "Aura OS",
-    category: "UI system",
-    result: "A glass interface language used across web and mobile.",
-    image:
-      "https://framerusercontent.com/images/ivN1G6lysIlnydh50zJF6doPLk4.png?width=2560&height=2000",
+    slug: "swagat",
+    title: "Swagat Hospital",
+    category: "Hospital website",
+    result: "A hospital site patients can actually find their way through.",
+    image: "/works/swagat.png",
+    link: "https://www.swagathospitalbongaigaon.in/",
   },
 ];
 
 export const testimonials = [
   {
     quote:
-      "We had a deck and a deadline. Fourteen days later we had a product in production — and investors stopped asking when it would be real.",
+      "We needed a product, not another deck. Two weeks later it was live — and the conversation with investors changed overnight.",
     name: "Maya Chen",
     role: "Founder, Aries",
   },
   {
     quote:
-      "Most studios over-design and under-ship. YaltLab did the opposite. The interface feels expensive because the engineering underneath is quiet.",
+      "The usual studio would still be in discovery. YaltLab shipped. The UI holds up because they did not skip the engineering.",
     name: "Jordan Hale",
     role: "CPO, Fact Finder",
   },
   {
     quote:
-      "They treated our MVP like a v1, not a prototype. We are still on the same codebase a year later — that is the whole point.",
+      "They built our first version like it had to last. A year later we are still on that codebase — which is the point of an alternative lab.",
     name: "Samir Patel",
     role: "CEO, CaveMiniplex",
   },
@@ -167,7 +167,7 @@ export const plans = [
     price: "$1,999",
     cadence: "one-time",
     description:
-      "A conversion-ready web presence for founders who need to look live this month.",
+      "A live web presence this month — for founders who cannot wait on an agency queue.",
     featured: true,
     includes: [
       "Marketing site or landing",
@@ -182,7 +182,7 @@ export const plans = [
     price: "Let’s talk",
     cadence: "scoped",
     description:
-      "Apps, platforms, and 14-day product sprints with a dedicated senior team.",
+      "Apps, platforms, and 14-day sprints with a small team that stays on the work.",
     featured: false,
     includes: [
       "Web, mobile, or desktop",
@@ -196,37 +196,37 @@ export const plans = [
 
 export const faqs = [
   {
-    q: "Can you actually ship in 14 days?",
-    a: "Yes — when the scope is locked. A focused MVP, a marketing site, or a first product slice. We will tell you on the call if the brief needs a longer arc.",
+    q: "Fourteen days — really?",
+    a: "Yes, when the scope is locked. An MVP, a marketing site, or a first product slice. If the brief needs a longer arc, we say so on the call.",
   },
   {
-    q: "What stack do you use?",
-    a: "Whatever the product needs to last. Typically Next.js, TypeScript, and a type-safe API on the web; Swift and Kotlin natively; applied AI only where it earns its keep.",
+    q: "What do you build with?",
+    a: "Whatever will still make sense next year. Usually Next.js and TypeScript on the web; Swift and Kotlin natively; AI only where it earns a place in the product.",
   },
   {
-    q: "Who owns the code?",
-    a: "You do. Repos, design files, domains, and cloud accounts are in your name from the start. We do not hold the product hostage.",
+    q: "Who owns what we ship?",
+    a: "You. Repos, design files, domains, and cloud accounts are in your name from day one. The lab does not keep the keys.",
   },
   {
     q: "How do revisions work?",
-    a: "Launchpad includes two rounds. Custom sprints include daily review in the live build, so surprises do not pile up at the end.",
+    a: "Launchpad includes two rounds. Custom sprints include daily review in the live build, so feedback does not pile up at the end.",
   },
   {
-    q: "Do you take over existing products?",
-    a: "Yes. We will audit, stabilize, and then ship the next slice — same 14-day cadence once the foundation is sound.",
+    q: "Can you pick up an existing product?",
+    a: "Yes. We audit, stabilize, then ship the next slice — same two-week cadence once the foundation is sound.",
   },
   {
-    q: "What happens after launch?",
-    a: "A clean handoff, or a retainer if you want us on the next version. Either way you can run the product without us.",
+    q: "What happens after day fourteen?",
+    a: "A clean handoff, or a retainer if you want us on v2. Either way, you can run the product without us.",
   },
 ];
 
 export const about = {
-  headline: "A small studio that ships like a senior team.",
+  headline: "Your alternative lab — a small team that ships.",
   story:
-    "YaltLab exists because most software takes too long and looks unfinished when it finally lands. We are a product studio — design and engineering in one room — built to take a founder from idea to a live MVP in fourteen days.",
+    "YaltLab means Your alternative lab: the other option when agencies take months and freelancers leave you with a prototype. Design and engineering in one room, idea to live MVP in fourteen days.",
   method:
-    "We do not staff up with juniors and hope. A tight senior crew scopes hard, builds in public with you, and leaves you with architecture that does not need a rewrite in six months.",
+    "No junior bench, no vanishing PM. A tight crew scopes hard, builds with you in the open, and leaves architecture that does not need a rewrite by summer.",
 };
 
 export const socials = [

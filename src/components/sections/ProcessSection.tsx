@@ -89,12 +89,11 @@ export default function ProcessSection() {
           <div>
             <p className="text-xs uppercase tracking-[0.24em] text-blue sm:text-sm">The method</p>
             <SplitHeading
-              text="Fourteen days. Three moves. One live product."
+              text="Three moves. Fourteen days. Then it is live."
               className="font-display mt-3 text-[1.75rem] font-semibold tracking-tight text-navy text-balance sm:text-4xl md:text-5xl"
             />
             <p className="mt-5 text-navy/60">
-              A cadence you can feel. No waterfall. No vanishing act. You review working software
-              every day of the sprint.
+              No waterfall, no black box. You see working software every day of the sprint.
             </p>
             <div className="mt-8 hidden items-center gap-3 lg:flex">
               {process.map((step, i) => (

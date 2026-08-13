@@ -23,6 +23,7 @@ export default function HeroSection() {
       if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
       const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
       tl.from(".hero-pill", { y: 10, opacity: 0, duration: 0.5 })
+        .from(".hero-kicker", { y: 12, opacity: 0, duration: 0.45 }, "-=0.2")
         .from(".hero-title", { y: 22, opacity: 0, duration: 0.7 }, "-=0.25")
         .from(".hero-side", { y: 18, opacity: 0, duration: 0.55 }, "-=0.4")
         .from(".hero-pills", { y: 14, opacity: 0, duration: 0.5 }, "-=0.3")
@@ -43,29 +44,31 @@ export default function HeroSection() {
             <span className="h-4 w-4 rounded-full bg-gradient-to-br from-violet-300 to-indigo-500 ring-2 ring-white sm:h-5 sm:w-5" />
             <span className="h-4 w-4 rounded-full bg-gradient-to-br from-amber-200 to-orange-400 ring-2 ring-white sm:h-5 sm:w-5" />
           </span>
-          <span className="min-w-0 leading-tight">Trusted by 20+ founders</span>
-          <span className="shrink-0 rounded-full bg-navy px-2 py-0.5 text-[9px] font-semibold tracking-wide text-white sm:text-[10px]">
-            FAST
-          </span>
+          <span className="min-w-0 leading-tight">YaltLab · Your alternative lab</span>
         </div>
 
         <div className="grid items-end gap-8 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)] lg:gap-12 xl:gap-16">
-          <h1 className="hero-title font-display text-[2rem] font-semibold leading-[1.18] tracking-tight text-navy sm:text-[2.6rem] md:text-[3.15rem] md:leading-[1.12]">
-            Build
-            <span className="icon-tile icon-tile-silver mx-1.5 mb-1 inline-grid align-middle text-[10px] font-bold text-navy sm:mx-2 sm:text-xs">
-              {"</>"}
-            </span>
-            <br className="sm:hidden" />
-            and ship in 14 days
-            <span className="icon-tile icon-tile-green ml-1.5 mb-1 inline-grid align-middle text-xs sm:ml-2 sm:text-sm">
-              🚀
-            </span>
-          </h1>
+          <div>
+            <p className="hero-kicker mb-3 text-xs uppercase tracking-[0.18em] text-blue sm:mb-4 sm:text-sm">
+              Your alternative lab
+            </p>
+            <h1 className="hero-title font-display text-[2rem] font-semibold leading-[1.18] tracking-tight text-navy sm:text-[2.6rem] md:text-[3.15rem] md:leading-[1.12]">
+              Build
+              <span className="icon-tile icon-tile-silver mx-1.5 mb-1 inline-grid align-middle text-[10px] font-bold text-navy sm:mx-2 sm:text-xs">
+                {"</>"}
+              </span>
+              <br className="sm:hidden" />
+              and ship in 14 days
+              <span className="icon-tile icon-tile-green ml-1.5 mb-1 inline-grid align-middle text-xs sm:ml-2 sm:text-sm">
+                🚀
+              </span>
+            </h1>
+          </div>
 
           <div className="hero-side max-w-md lg:justify-self-end lg:pb-1">
             <p className="text-[15px] leading-relaxed text-navy/60 sm:text-base">
-              From concept to a clickable product. Strategy, design, and launch — so you can focus
-              on building momentum.
+              Agencies take months. We are the other option — design, build, and a live product in
+              two weeks.
             </p>
             <GlassButton
               href="/contact"
@@ -96,21 +99,21 @@ export default function HeroSection() {
             <div className="flex items-center gap-3 py-3 sm:px-2 sm:py-0">
               <span className="icon-tile icon-tile-green shrink-0 text-xs">⏱</span>
               <div className="min-w-0">
-                <p className="text-sm font-medium text-navy">MVP in 14 days</p>
+                <p className="text-sm font-medium text-navy">Two-week sprints</p>
                 <p className="hidden text-xs text-navy/45 md:block">Concept to live product</p>
               </div>
             </div>
             <div className="flex items-center gap-3 border-t border-navy/8 py-3 sm:border-t-0 sm:px-2 sm:py-0">
               <span className="icon-tile icon-tile-blue shrink-0 text-xs">✦</span>
               <div className="min-w-0">
-                <p className="text-sm font-medium text-navy">AI in the build</p>
-                <p className="hidden text-xs text-navy/45 md:block">Where it actually helps</p>
+                <p className="text-sm font-medium text-navy">You own the product</p>
+                <p className="hidden text-xs text-navy/45 md:block">Repos, domains, the lot</p>
               </div>
             </div>
             <div className="flex items-center gap-3 border-t border-navy/8 py-3 sm:border-t-0 sm:px-2 sm:py-0">
               <span className="icon-tile icon-tile-yellow shrink-0 text-xs">▣</span>
               <div className="min-w-0">
-                <p className="text-sm font-medium text-navy">Clean, scalable stack</p>
+                <p className="text-sm font-medium text-navy">Senior-built stack</p>
                 <p className="hidden text-xs text-navy/45 md:block">Ready to grow after launch</p>
               </div>
             </div>

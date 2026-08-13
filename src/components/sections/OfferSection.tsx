@@ -11,14 +11,14 @@ export default function OfferSection() {
       <Container>
         <Reveal>
           <span className="inline-flex rounded-full border border-navy/10 bg-white px-4 py-1.5 text-sm text-navy/70">
-            Why YaltLab
+            Why the lab
           </span>
         </Reveal>
 
         <h2 className="font-display mt-6 max-w-3xl text-[1.65rem] font-semibold leading-[1.25] tracking-tight text-navy sm:text-3xl md:text-4xl">
-          Most products stall in decks.{" "}
+          You do not need another agency.{" "}
           <span className="mt-3 block w-fit max-w-full rounded-xl bg-navy px-3 py-2 text-[0.92em] leading-snug text-white sm:mt-2 sm:inline-block sm:rounded-lg sm:py-1">
-            We move faster, build leaner, and deliver.
+            You need a lab that ships.
           </span>
         </h2>
 

@@ -82,7 +82,7 @@ export default function WorkSection() {
           <div className="min-w-0">
             <p className="text-xs uppercase tracking-[0.24em] text-blue sm:text-sm">Selected work</p>
             <SplitHeading
-              text="Built to convert, then to last."
+              text="Real products. Not pitch decks."
               className="font-display mt-3 text-[1.75rem] font-semibold tracking-tight text-navy text-balance sm:text-4xl md:text-5xl"
             />
           </div>
@@ -93,7 +93,7 @@ export default function WorkSection() {
           </Reveal>
         </div>
 
-        <Link href="/work" className="group mt-12 block">
+        <Link href={featured.link} className="group mt-12 block">
           <div className="work-featured relative h-[58vw] max-h-[640px] min-h-[220px] overflow-hidden rounded-[22px] sm:min-h-[280px] sm:rounded-[28px]">
             <Image
               src={featured.image}

@@ -15,7 +15,7 @@ export default function FAQSection() {
       <Container>
         <p className="text-xs uppercase tracking-[0.24em] text-blue sm:text-sm">FAQ</p>
         <SplitHeading
-          text="Straight answers before the call."
+          text="Ask this before you book."
           className="font-display mt-3 max-w-2xl text-[1.75rem] font-semibold tracking-tight text-navy text-balance sm:text-4xl md:text-5xl"
         />
 

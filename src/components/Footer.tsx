@@ -12,13 +12,13 @@ export default function Footer() {
           <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between md:gap-8">
             <div className="max-w-xl">
               <p className="text-xs uppercase tracking-[0.22em] text-blue sm:text-sm">
-                Ready when you are
+                The other option
               </p>
               <h2 className="font-display mt-3 text-[1.75rem] font-semibold tracking-tight text-navy text-balance sm:text-4xl md:text-5xl">
-                Let’s ship the next fourteen days.
+                Your next two weeks, in the lab.
               </h2>
               <p className="mt-4 text-sm leading-relaxed text-navy/60 sm:text-base">
-                Tell us what you are building. We will tell you if it fits a sprint — and how we would launch it.
+                Tell us what you are building. We will tell you if two weeks is enough — and how we would ship it.
               </p>
             </div>
             <GlassButton href="/contact" variant="solid" className="w-full shrink-0 !px-8 !py-3.5 sm:w-auto">

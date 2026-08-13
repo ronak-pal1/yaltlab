@@ -13,7 +13,7 @@ export default function ServicesSection() {
           <div className="min-w-0">
             <p className="text-xs uppercase tracking-[0.24em] text-blue sm:text-sm">Services</p>
             <SplitHeading
-              text="Every surface a product needs."
+              text="Whatever the product has to live on."
               className="font-display mt-3 max-w-xl text-[1.75rem] font-semibold tracking-tight text-navy text-balance sm:text-4xl md:text-5xl"
             />
           </div>

@@ -9,7 +9,7 @@ export default function TestimonialsSection() {
       <Container>
         <p className="text-xs uppercase tracking-[0.24em] text-blue sm:text-sm">Clients</p>
         <SplitHeading
-          text="Founders who needed it live, not later."
+          text="They came for a lab, not a slide deck."
           className="font-display mt-3 max-w-2xl text-[1.75rem] font-semibold tracking-tight text-navy text-balance sm:text-4xl md:text-5xl"
         />
 

@@ -16,12 +16,12 @@ export default function ProofSection() {
       <Container className="flex flex-col items-center text-center">
         <Reveal>
           <span className="glow-cyan inline-flex rounded-full border border-navy/10 bg-white px-4 py-1.5 text-sm text-navy/70">
-            Trusted by founders
+            In the lab
           </span>
         </Reveal>
 
         <SplitHeading
-          text="Trusted by startups, first-time founders, and teams who need it live."
+          text="Founders who skipped the six-month wait."
           className="font-display mt-6 max-w-2xl text-[1.65rem] font-semibold tracking-tight text-navy text-balance sm:text-3xl md:text-4xl"
         />
 
@@ -60,11 +60,11 @@ export default function ProofSection() {
                 {"</>"}
               </span>
               <p className="text-base font-semibold leading-snug sm:text-lg">
-                <span className="text-green">Faster delivery</span>
-                <span className="text-navy"> than a traditional team</span>
+                <span className="text-green">The alternative</span>
+                <span className="text-navy"> to a traditional team</span>
               </p>
             </div>
-            <p className="text-sm text-navy/50">Our fastest launch: 14 days. That is the sprint.</p>
+            <p className="text-sm text-navy/50">Two weeks is the default. Not a rush fee.</p>
           </div>
         </Reveal>
       </Container>
