@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { nav } from "@/lib/content";
 import { cn } from "@/lib/cn";
-import GlassButton from "@/components/ui/GlassButton";
+import CalButton from "@/components/CalButton";
 
 export default function Header() {
   const pathname = usePathname();
@@ -68,12 +68,12 @@ export default function Header() {
 
         <div className="flex items-center gap-2">
           <div className="hidden md:block">
-            <GlassButton href="/contact" variant="dark" className="!px-4 !py-2">
+            <CalButton variant="dark" className="!px-4 !py-2">
               Book a Call
               <span className="grid h-5 w-5 place-items-center rounded-[6px] bg-white/10 text-[11px]">
                 ↗
               </span>
-            </GlassButton>
+            </CalButton>
           </div>
           <button
             type="button"
@@ -103,9 +103,9 @@ export default function Header() {
                 {item.name}
               </Link>
             ))}
-            <GlassButton href="/contact" variant="dark" className="mt-2 w-full">
+            <CalButton variant="dark" className="mt-2 w-full">
               Book a Call
-            </GlassButton>
+            </CalButton>
           </div>
         </div>
       )}

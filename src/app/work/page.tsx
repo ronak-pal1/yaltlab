@@ -18,7 +18,7 @@ export default function WorkPage() {
       <PageHero
         eyebrow="Work"
         title="A few things that made it out of the building."
-        copy="Product slices and interfaces we designed and shipped. Each one had a deadline — and a founder on the other side of it."
+        copy="Product slices and interfaces we designed and shipped. Each one had a deadline, and a founder on the other side of it."
       />
 
       <section className="relative pb-8">

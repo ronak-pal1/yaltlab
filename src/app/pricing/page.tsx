@@ -3,7 +3,7 @@ import { plans, faqs } from "@/lib/content";
 import PageHero from "@/components/ui/PageHero";
 import Container from "@/components/ui/Container";
 import GlassCard from "@/components/ui/GlassCard";
-import GlassButton from "@/components/ui/GlassButton";
+import CalButton from "@/components/CalButton";
 import Reveal from "@/components/effects/Reveal";
 import CloseCTASection from "@/components/sections/CloseCTASection";
 
@@ -18,7 +18,7 @@ export default function PricingPage() {
       <PageHero
         eyebrow="Pricing"
         title="Clear numbers. No theater."
-        copy="Launchpad is a one-time site engagement. Custom is a scoped product sprint — web, mobile, or both — with a senior team."
+        copy="Launchpad is a one-time site engagement. Custom is a scoped product sprint, web, mobile, or both, with a senior team."
       />
 
       <section className="relative pb-16">
@@ -45,13 +45,12 @@ export default function PricingPage() {
                     </li>
                   ))}
                 </ul>
-                <GlassButton
-                  href="/contact"
+                <CalButton
                   variant={plan.featured ? "solid" : "glass"}
                   className="mt-10 w-full"
                 >
                   Book a Call
-                </GlassButton>
+                </CalButton>
               </GlassCard>
             </Reveal>
           ))}

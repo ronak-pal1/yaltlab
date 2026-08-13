@@ -3,11 +3,11 @@ import { site } from "@/lib/content";
 import PageHero from "@/components/ui/PageHero";
 import Container from "@/components/ui/Container";
 import GlassCard from "@/components/ui/GlassCard";
-import ContactForm from "@/components/sections/ContactForm";
+import CalEmbed from "@/components/CalEmbed";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Book a call with YaltLab — 14-day product sprints.",
+  description: "Book a call with YaltLab for a 14-day product sprint.",
 };
 
 export default function ContactPage() {
@@ -15,35 +15,37 @@ export default function ContactPage() {
     <>
       <PageHero
         eyebrow="Contact"
-        title="Tell us what you want live in fourteen days."
-        copy="A short brief is enough. We reply within a day with whether it fits a sprint — and a time to talk."
+        title="Pick a time. Leave with a plan for fourteen days."
+        copy="The calendar is live. Grab a slot and we will tell you if it fits a sprint."
       />
 
       <section className="relative pb-24">
-        <Container className="grid gap-6 lg:grid-cols-[0.85fr_1.15fr]">
+        <Container className="grid gap-6 lg:grid-cols-[0.72fr_1.28fr]">
           <div className="flex flex-col gap-4">
             <GlassCard className="p-5 sm:p-7">
               <p className="text-xs uppercase tracking-[0.18em] text-navy/45">Email</p>
               <a href={`mailto:${site.email}`} className="mt-2 block break-all text-lg text-navy sm:text-xl">
                 {site.email}
               </a>
-              <p className="mt-2 text-sm text-navy/50">We answer within 24 hours.</p>
+              <p className="mt-2 text-sm text-navy/50">Prefer writing first? We answer within 24 hours.</p>
             </GlassCard>
             <GlassCard variant="light" className="p-5 sm:p-7">
               <p className="text-xs uppercase tracking-[0.18em] text-navy/45">Cadence</p>
-              <p className="font-display mt-2 text-2xl">Remote, worldwide</p>
+              <p className="font-display mt-2 text-2xl">30 minutes, remote</p>
               <p className="mt-2 text-sm text-navy/60">
-                Calls on your calendar. Builds you can click. No on-site required.
+                Timezones handled. Video link in the invite. No on-site required.
               </p>
             </GlassCard>
           </div>
 
-          <GlassCard className="p-5 sm:p-7 md:p-10">
-            <h2 className="font-display text-2xl font-semibold text-navy">Book a call</h2>
-            <p className="mt-2 mb-6 text-sm text-navy/55">
-              Opens your mail client with the brief filled in. Swap in a calendar link whenever you have one.
+          <GlassCard className="overflow-hidden p-3 sm:p-5">
+            <h2 className="font-display px-2 pt-2 text-2xl font-semibold text-navy sm:px-3">
+              Book a call
+            </h2>
+            <p className="mt-1 mb-3 px-2 text-sm text-navy/55 sm:px-3">
+              Choose a slot that works. Confirmation lands in your inbox.
             </p>
-            <ContactForm />
+            <CalEmbed />
           </GlassCard>
         </Container>
       </section>

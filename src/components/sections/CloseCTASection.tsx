@@ -7,6 +7,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Container from "@/components/ui/Container";
 import GlassCard from "@/components/ui/GlassCard";
 import GlassButton from "@/components/ui/GlassButton";
+import CalButton from "@/components/CalButton";
 import { SplitHeading } from "@/components/effects/Reveal";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
@@ -64,9 +65,9 @@ export default function CloseCTASection() {
             Thirty minutes. We will tell you if it fits two weeks.
           </p>
           <div className="relative mt-8 flex flex-col justify-center gap-3 sm:flex-row sm:flex-wrap">
-            <GlassButton href="/contact" variant="solid" className="w-full !px-8 !py-3.5 sm:w-auto">
+            <CalButton variant="solid" className="w-full !px-8 !py-3.5 sm:w-auto">
               Book a Call
-            </GlassButton>
+            </CalButton>
             <GlassButton href="/pricing" className="w-full sm:w-auto">
               See pricing
             </GlassButton>

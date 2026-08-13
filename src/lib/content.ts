@@ -2,8 +2,9 @@ export const site = {
   name: "YaltLab",
   tagline: "Your alternative lab",
   email: "hello@yaltlab.com",
+  calLink: "yaltlab/30min",
   description:
-    "YaltLab — Your alternative lab. We design, build, and launch software in 14 days so you skip the agency wait and own what ships.",
+    "YaltLab is Your alternative lab. We design, build, and launch software in 14 days so you skip the agency wait and own what ships.",
 };
 
 export const nav = [
@@ -37,7 +38,7 @@ export const pillars = [
   },
   {
     title: "The lab hands you the keys",
-    body: "Repo, design files, domain, and cloud in your name. We are a partner for the sprint — not a landlord after it.",
+    body: "Repo, design files, domain, and cloud in your name. We are a partner for the sprint, not a landlord after it.",
   },
 ];
 
@@ -48,7 +49,7 @@ export const services = [
     eyebrow: "Product & marketing",
     summary:
       "Web apps and sites that load fast, convert, and do not need a rewrite in six months.",
-    body: "MVPs and production platforms on Next.js — type-safe APIs, a funnel and a product designed in the same two weeks.",
+    body: "MVPs and production platforms on Next.js: type-safe APIs, a funnel and a product designed in the same two weeks.",
   },
   {
     slug: "ios",
@@ -69,20 +70,20 @@ export const services = [
     title: "Desktop Apps",
     eyebrow: "Mac, Windows, Linux",
     summary: "Desktop tools for Mac, Windows, and Linux that still feel local.",
-    body: "Electron or Tauri when the work lives on a machine — dashboards, internal systems, creative tools. Fast to ship, honest about performance.",
+    body: "Electron or Tauri when the work lives on a machine: dashboards, internal systems, creative tools. Fast to ship, honest about performance.",
   },
   {
     slug: "design",
     title: "UI/UX Design",
     eyebrow: "Interface & brand",
     summary: "Flows and a visual system your next engineer can actually use.",
-    body: "Research, screens, and a design language built for conversion — and for the people who will live in the product every day.",
+    body: "Research, screens, and a design language built for conversion, and for the people who will live in the product every day.",
   },
   {
     slug: "ai",
     title: "AI / ML",
     eyebrow: "Applied intelligence",
-    summary: "AI wired into the workflow — not a slide about tomorrow.",
+    summary: "AI wired into the workflow, not a slide about tomorrow.",
     body: "Assistants, extraction, ranking, generation. We pick the model, the guardrails, and the UX so the feature ships in the sprint.",
   },
 ];
@@ -91,7 +92,7 @@ export const process = [
   {
     days: "01–03",
     title: "Discover",
-    body: "We lock the outcome, the users, and the stack. You leave with a scope, a visual direction, and a two-week plan — not a forty-page PDF.",
+    body: "We lock the outcome, the users, and the stack. You leave with a scope, a visual direction, and a two-week plan, not a forty-page PDF.",
   },
   {
     days: "04–11",
@@ -110,7 +111,7 @@ export const works = [
     slug: "ariesfit",
     title: "Ariesfit",
     category: "Fitness app + web",
-    result: "AI fitness product spanning app and web — training, tracking, and a site that matches the product.",
+    result: "AI fitness product spanning app and web: training, tracking, and a site that matches the product.",
     image: "/works/ariesfit.png",
     link: "https://ariesfit.in",
   },
@@ -126,7 +127,7 @@ export const works = [
     slug: "gocourier",
     title: "Go Courier",
     category: "Food delivery",
-    result: "An ordering site built to be obvious — browse, cart, checkout without friction.",
+    result: "An ordering site built to be obvious: browse, cart, checkout without friction.",
     image: "/works/gocourier.png",
     link: "https://gocourier-drab.vercel.app/",
   },
@@ -143,7 +144,7 @@ export const works = [
 export const testimonials = [
   {
     quote:
-      "We needed a product, not another deck. Two weeks later it was live — and the conversation with investors changed overnight.",
+      "We needed a product, not another deck. Two weeks later it was live, and the conversation with investors changed overnight.",
     name: "Maya Chen",
     role: "Founder, Aries",
   },
@@ -155,7 +156,7 @@ export const testimonials = [
   },
   {
     quote:
-      "They built our first version like it had to last. A year later we are still on that codebase — which is the point of an alternative lab.",
+      "They built our first version like it had to last. A year later we are still on that codebase, which is the point of an alternative lab.",
     name: "Samir Patel",
     role: "CEO, CaveMiniplex",
   },
@@ -167,7 +168,7 @@ export const plans = [
     price: "$1,999",
     cadence: "one-time",
     description:
-      "A live web presence this month — for founders who cannot wait on an agency queue.",
+      "A live web presence this month, for founders who cannot wait on an agency queue.",
     featured: true,
     includes: [
       "Marketing site or landing",
@@ -196,7 +197,7 @@ export const plans = [
 
 export const faqs = [
   {
-    q: "Fourteen days — really?",
+    q: "Fourteen days, really?",
     a: "Yes, when the scope is locked. An MVP, a marketing site, or a first product slice. If the brief needs a longer arc, we say so on the call.",
   },
   {
@@ -213,7 +214,7 @@ export const faqs = [
   },
   {
     q: "Can you pick up an existing product?",
-    a: "Yes. We audit, stabilize, then ship the next slice — same two-week cadence once the foundation is sound.",
+    a: "Yes. We audit, stabilize, then ship the next slice. Same two-week cadence once the foundation is sound.",
   },
   {
     q: "What happens after day fourteen?",
@@ -222,7 +223,7 @@ export const faqs = [
 ];
 
 export const about = {
-  headline: "Your alternative lab — a small team that ships.",
+  headline: "Your alternative lab: a small team that ships.",
   story:
     "YaltLab means Your alternative lab: the other option when agencies take months and freelancers leave you with a prototype. Design and engineering in one room, idea to live MVP in fourteen days.",
   method:
@@ -234,14 +235,4 @@ export const socials = [
   { name: "LinkedIn", href: "#" },
   { name: "X", href: "#" },
   { name: "YouTube", href: "#" },
-];
-
-export const projectTypes = [
-  "Web MVP",
-  "Marketing site",
-  "iOS / Android",
-  "Desktop app",
-  "UI/UX",
-  "AI feature",
-  "Something else",
 ];

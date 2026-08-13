@@ -8,7 +8,7 @@ type Props = {
   variant?: "glass" | "solid" | "ghost" | "dark";
   type?: "button" | "submit";
   onClick?: () => void;
-};
+} & Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, "type" | "onClick" | "children" | "className">;
 
 export default function GlassButton({
   href,
@@ -17,6 +17,7 @@ export default function GlassButton({
   variant = "glass",
   type = "button",
   onClick,
+  ...rest
 }: Props) {
   const styles = cn(
     "inline-flex min-h-11 items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-medium tracking-wide",
@@ -37,7 +38,7 @@ export default function GlassButton({
   }
 
   return (
-    <button type={type} onClick={onClick} className={styles}>
+    <button type={type} onClick={onClick} className={styles} {...rest}>
       <span className="inline-flex items-center gap-2">{children}</span>
     </button>
   );

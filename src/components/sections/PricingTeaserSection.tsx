@@ -1,7 +1,7 @@
 import { plans } from "@/lib/content";
 import Container from "@/components/ui/Container";
 import GlassCard from "@/components/ui/GlassCard";
-import GlassButton from "@/components/ui/GlassButton";
+import CalButton from "@/components/CalButton";
 import Reveal, { SplitHeading } from "@/components/effects/Reveal";
 
 export default function PricingTeaserSection() {
@@ -32,13 +32,12 @@ export default function PricingTeaserSection() {
                     </li>
                   ))}
                 </ul>
-                <GlassButton
-                  href="/contact"
+                <CalButton
                   variant={plan.featured ? "solid" : "glass"}
                   className="mt-8 w-full"
                 >
                   Book a Call
-                </GlassButton>
+                </CalButton>
               </GlassCard>
             </Reveal>
           ))}

@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { nav, site, socials } from "@/lib/content";
 import Container from "@/components/ui/Container";
-import GlassButton from "@/components/ui/GlassButton";
 import GlassCard from "@/components/ui/GlassCard";
+import CalButton from "@/components/CalButton";
 
 export default function Footer() {
   return (
@@ -18,12 +18,12 @@ export default function Footer() {
                 Your next two weeks, in the lab.
               </h2>
               <p className="mt-4 text-sm leading-relaxed text-navy/60 sm:text-base">
-                Tell us what you are building. We will tell you if two weeks is enough — and how we would ship it.
+                Tell us what you are building. We will tell you if two weeks is enough, and how we would ship it.
               </p>
             </div>
-            <GlassButton href="/contact" variant="solid" className="w-full shrink-0 !px-8 !py-3.5 sm:w-auto">
+            <CalButton variant="solid" className="w-full shrink-0 !px-8 !py-3.5 sm:w-auto">
               Book a Call
-            </GlassButton>
+            </CalButton>
           </div>
         </GlassCard>
 

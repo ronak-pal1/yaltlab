@@ -5,6 +5,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Container from "@/components/ui/Container";
 import GlassButton from "@/components/ui/GlassButton";
+import CalButton from "@/components/CalButton";
 
 gsap.registerPlugin(useGSAP);
 
@@ -23,8 +24,8 @@ export default function HeroSection() {
       if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
       const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
       tl.from(".hero-pill", { y: 10, opacity: 0, duration: 0.5 })
-        .from(".hero-kicker", { y: 12, opacity: 0, duration: 0.45 }, "-=0.2")
-        .from(".hero-title", { y: 22, opacity: 0, duration: 0.7 }, "-=0.25")
+        .from(".hero-kicker", { y: 14, opacity: 0, duration: 0.5 }, "-=0.22")
+        .from(".hero-title", { y: 28, opacity: 0, duration: 0.75 }, "-=0.28")
         .from(".hero-side", { y: 18, opacity: 0, duration: 0.55 }, "-=0.4")
         .from(".hero-pills", { y: 14, opacity: 0, duration: 0.5 }, "-=0.3")
         .from(".hero-bar", { y: 20, opacity: 0, duration: 0.6 }, "-=0.25");
@@ -33,57 +34,59 @@ export default function HeroSection() {
   );
 
   return (
-    <section ref={root} className="relative overflow-hidden pt-24 pb-12 sm:pt-28 md:pt-32 md:pb-20">
-      <div className="pointer-events-none absolute -left-24 top-10 h-64 w-64 rounded-full bg-blue/20 blur-3xl sm:h-80 sm:w-80" />
-      <div className="pointer-events-none absolute right-[-4rem] top-32 h-56 w-56 rounded-full bg-sky-300/30 blur-3xl md:right-12" />
+    <section
+      ref={root}
+      className="relative overflow-hidden pt-28 pb-14 sm:pt-32 md:pt-36 md:pb-24"
+    >
+      <div className="pointer-events-none absolute -left-24 top-6 h-72 w-72 rounded-full bg-blue/25 blur-3xl sm:h-96 sm:w-96" />
+      <div className="pointer-events-none absolute right-[-5rem] top-24 h-64 w-64 rounded-full bg-sky-300/35 blur-3xl md:right-8 md:h-80 md:w-80" />
+      <div className="pointer-events-none absolute bottom-10 left-1/3 h-40 w-40 rounded-full bg-violet-300/20 blur-3xl" />
 
       <Container>
-        <div className="hero-pill mb-6 inline-flex max-w-full items-center gap-2 rounded-full border border-white/80 bg-white/70 px-2.5 py-1.5 text-[11px] text-navy/70 shadow-sm backdrop-blur-xl sm:mb-8 sm:gap-2.5 sm:px-3 sm:text-sm">
-          <span className="flex shrink-0 -space-x-1.5">
-            <span className="h-4 w-4 rounded-full bg-gradient-to-br from-sky-300 to-blue-500 ring-2 ring-white sm:h-5 sm:w-5" />
-            <span className="h-4 w-4 rounded-full bg-gradient-to-br from-violet-300 to-indigo-500 ring-2 ring-white sm:h-5 sm:w-5" />
-            <span className="h-4 w-4 rounded-full bg-gradient-to-br from-amber-200 to-orange-400 ring-2 ring-white sm:h-5 sm:w-5" />
+        <div className="hero-pill mb-7 inline-flex max-w-full items-center gap-2.5 rounded-full border border-white/80 bg-white/70 px-3 py-1.5 text-[11px] text-navy/70 shadow-sm backdrop-blur-xl sm:mb-9 sm:px-3.5 sm:text-sm">
+          <span className="relative flex h-2 w-2 shrink-0">
+            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green/70 opacity-60" />
+            <span className="relative inline-flex h-2 w-2 rounded-full bg-green" />
           </span>
-          <span className="min-w-0 leading-tight">YaltLab · Your alternative lab</span>
+          <span className="min-w-0 leading-tight">Now booking the next 14-day sprint</span>
         </div>
 
-        <div className="grid items-end gap-8 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)] lg:gap-12 xl:gap-16">
-          <div>
-            <p className="hero-kicker mb-3 text-xs uppercase tracking-[0.18em] text-blue sm:mb-4 sm:text-sm">
-              Your alternative lab
-            </p>
-            <h1 className="hero-title font-display text-[2rem] font-semibold leading-[1.18] tracking-tight text-navy sm:text-[2.6rem] md:text-[3.15rem] md:leading-[1.12]">
-              Build
-              <span className="icon-tile icon-tile-silver mx-1.5 mb-1 inline-grid align-middle text-[10px] font-bold text-navy sm:mx-2 sm:text-xs">
-                {"</>"}
-              </span>
-              <br className="sm:hidden" />
-              and ship in 14 days
-              <span className="icon-tile icon-tile-green ml-1.5 mb-1 inline-grid align-middle text-xs sm:ml-2 sm:text-sm">
-                🚀
-              </span>
-            </h1>
-          </div>
+        <p className="hero-kicker font-display text-[1.05rem] font-medium tracking-tight text-navy/45 sm:text-xl md:text-2xl">
+          Your
+          <span className="mx-2 text-navy/20 sm:mx-2.5">·</span>
+          <span className="text-blue">alternative</span>
+          <span className="mx-2 text-navy/20 sm:mx-2.5">·</span>
+          lab
+        </p>
 
-          <div className="hero-side max-w-md lg:justify-self-end lg:pb-1">
-            <p className="text-[15px] leading-relaxed text-navy/60 sm:text-base">
-              Agencies take months. We are the other option — design, build, and a live product in
+        <div className="mt-4 grid items-end gap-8 lg:mt-5 lg:grid-cols-[minmax(0,1.25fr)_minmax(0,0.75fr)] lg:gap-14 xl:gap-20">
+          <h1 className="hero-title font-display text-[2.35rem] font-semibold leading-[1.08] tracking-tight text-navy sm:text-5xl md:text-6xl lg:text-[4rem] lg:leading-[1.05]">
+            Build and ship
+            <br />
+            in{" "}
+              <span className="text-blue">14 days</span>
+          </h1>
+
+          <div className="hero-side max-w-md lg:justify-self-end lg:pb-2">
+            <p className="text-[15px] leading-relaxed text-navy/60 sm:text-base md:text-[17px]">
+              Agencies take months. We are the other option: design, build, and a live product in
               two weeks.
             </p>
-            <GlassButton
-              href="/contact"
-              variant="solid"
-              className="mt-5 w-full !px-7 !py-3.5 text-base sm:mt-6 sm:w-auto"
-            >
-              Book a Call
-              <span className="grid h-6 w-6 place-items-center rounded-md bg-white/20 text-xs">
-                ↗
-              </span>
-            </GlassButton>
+            <div className="mt-5 flex flex-col gap-3 sm:mt-6 sm:flex-row sm:flex-wrap">
+              <CalButton variant="solid" className="w-full !px-7 !py-3.5 text-base sm:w-auto">
+                Book a Call
+                <span className="grid h-6 w-6 place-items-center rounded-md bg-white/20 text-xs">
+                  ↗
+                </span>
+              </CalButton>
+              <GlassButton href="/work" className="w-full sm:w-auto">
+                See work
+              </GlassButton>
+            </div>
           </div>
         </div>
 
-        <div className="hero-pills mt-8 flex flex-wrap gap-2 sm:mt-10 sm:gap-3">
+        <div className="hero-pills mt-9 flex flex-wrap gap-2 sm:mt-12 sm:gap-3">
           {surfaces.map((item) => (
             <span
               key={item.label}

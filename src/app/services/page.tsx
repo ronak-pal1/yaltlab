@@ -3,14 +3,14 @@ import { services } from "@/lib/content";
 import PageHero from "@/components/ui/PageHero";
 import Container from "@/components/ui/Container";
 import GlassCard from "@/components/ui/GlassCard";
-import GlassButton from "@/components/ui/GlassButton";
+import CalButton from "@/components/CalButton";
 import Reveal from "@/components/effects/Reveal";
 import CloseCTASection from "@/components/sections/CloseCTASection";
 
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Web, iOS, Android, desktop, UI/UX, and applied AI — senior product work on a 14-day cadence.",
+    "Web, iOS, Android, desktop, UI/UX, and applied AI. Senior product work on a 14-day cadence.",
 };
 
 export default function ServicesPage() {
@@ -19,7 +19,7 @@ export default function ServicesPage() {
       <PageHero
         eyebrow="Services"
         title="Pick a surface. We still ship the product."
-        copy="Whether you need a site, a native app, or an AI feature inside an existing stack — the same studio, the same 14-day discipline."
+        copy="Whether you need a site, a native app, or an AI feature inside an existing stack: the same studio, the same 14-day discipline."
       />
 
       <section className="relative pb-16">
@@ -41,9 +41,9 @@ export default function ServicesPage() {
                   </div>
                   <div>
                     <p className="text-sm leading-relaxed text-navy/65 sm:text-base">{service.body}</p>
-                    <GlassButton href="/contact" className="mt-6 w-full sm:w-auto">
+                    <CalButton variant="glass" className="mt-6 w-full sm:w-auto">
                       Start this engagement
-                    </GlassButton>
+                    </CalButton>
                   </div>
                 </div>
               </GlassCard>
